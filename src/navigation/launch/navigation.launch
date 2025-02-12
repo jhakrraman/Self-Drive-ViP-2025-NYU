@@ -1,0 +1,24 @@
+<launch>
+  <!-- Define launch arguments for all configurable parameters -->
+  <arg name="codebook_path" default="$(find navigation)/codebook.pkl"/>
+  <arg name="target_image_path" default="$(find navigation)/target.jpg"/>
+  <arg name="bag_file_path" default="/home/linux/catkin_s25/bags/021025test_2025-02-10-20-55-42.bag"/>
+  <arg name="num_clusters" default="64"/>
+  <arg name="distance_threshold" default="1.4"/>
+  <arg name="image_topic" default="/camera/image"/>
+
+  <!-- VLAD Processor Node -->
+  <node name="vlad_processor" pkg="navigation" type="vlad_bag_processor_v2.py" output="screen">
+    <param name="codebook_path" value="$(arg codebook_path)"/>
+    <param name="target_image_path" value="$(arg target_image_path)"/>
+    <param name="bag_file_path" value="$(arg bag_file_path)"/>
+    <param name="num_clusters" value="$(arg num_clusters)"/>
+    <param name="distance_threshold" value="$(arg distance_threshold)"/>
+  </node>
+
+  <!-- Bag Player Node -->
+  <node pkg="navigation" type="bag_player.py" name="bag_player" output="screen">
+    <param name="bag_path" value="$(arg bag_file_path)"/>
+    <param name="image_topic" value="/camera/image/"/>
+  </node>
+</launch>

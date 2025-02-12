@@ -1,0 +1,2 @@
+exploration:navigation:turtlebot3_teleop
+-DCATKIN_DEVEL_PREFIX=/home/linux/catkin_s25/devel -DCMAKE_INSTALL_PREFIX=/home/linux/catkin_s25/install -G Unix Makefiles

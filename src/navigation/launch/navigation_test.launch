@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="navigation" type="test_node_3.py" name="test_node_3" output="screen"/>
+</launch>

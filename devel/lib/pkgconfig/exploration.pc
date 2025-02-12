@@ -1,0 +1,8 @@
+prefix=/home/linux/catkin_s25/devel
+
+Name: exploration
+Description: Description of exploration
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

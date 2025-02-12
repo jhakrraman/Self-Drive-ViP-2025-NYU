@@ -1,0 +1,18 @@
+<launch>
+    <!-- Add argument for bag filename with correct 'doc' attribute -->
+    <arg name="bag_filename" default="custom_name.bag" 
+         doc="Output filename for rosbag recording (relative to workspace root)"/>
+    
+    <!-- 1. Rosbag Recording with absolute path -->
+    <node pkg="rosbag" type="record" name="exploration_bag" 
+          args="record -o $(env HOME)/catkin_s25/$(arg bag_filename)
+                /odom /camera/image /cmd_vel"/>
+            
+    <!-- 2. RVIZ with Config -->
+    <node pkg="rviz" type="rviz" name="exploration_rviz" 
+          args="-d $(find exploration)/../../visualization_config.rviz"
+          required="true"/>
+
+    <!-- 3. Turtlebot3 Teleop -->
+    <include file="$(find turtlebot3_teleop)/launch/turtlebot3_teleop_key.launch"/>
+</launch>
