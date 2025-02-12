@@ -2,7 +2,7 @@
 This is the repo for NYU Self-Drive VIP Spring 2025 semester.
 
 Ubuntu (Linux) system setup:
-Mac computer (M1 or Intel) via UTM (ask Tim).
+Mac computer (M or Intel) via UTM (ask Tim).
 Windows computer via dualboot (ask Dennis), or WSL.
 
 Onboard Robotic Operating System (ROS):
