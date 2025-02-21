@@ -53,8 +53,8 @@ def save_images_from_bag(bag_path, output_dir, image_topic):
 
 if __name__ == "__main__":
     # Edit these values as needed
-    BAG_FILE = "/home/linux/catkin_s25/bags/target_image_2025-02-10-21-13-09.bag"  # Update this path
-    OUTPUT_DIR = "/home/linux/catkin_s25/image_data/target image"       # Update if needed
+    BAG_FILE = "/home/zihan/catkin_s25/src/NYU-Self-Drive_S25/bags/testrun1_2025-02-20-01-26-32.bag"  # Update this path
+    OUTPUT_DIR = "/home/zihan/catkin_s25/src/NYU-Self-Drive_S25/image_data/target image"       # Update if needed
     IMAGE_TOPIC = "/camera/image"         # Update if your topic is different
     
     save_images_from_bag(BAG_FILE, OUTPUT_DIR, IMAGE_TOPIC)
