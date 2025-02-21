@@ -2,7 +2,7 @@
   <!-- Define launch arguments for all configurable parameters -->
   <arg name="codebook_path" default="$(find navigation)/codebook.pkl"/>
   <arg name="target_image_path" default="$(find navigation)/target.jpg"/>
-  <arg name="bag_file_path" default="/home/linux/catkin_s25/bags/021025test_2025-02-10-20-55-42.bag"/>
+  <arg name="bag_file_path" default="/home/zihan/catkin_s25/src/NYU-Self-Drive_S25/bags/testrun1_2025-02-20-01-26-32.bag"/>
   <arg name="num_clusters" default="64"/>
   <arg name="distance_threshold" default="1.4"/>
   <arg name="image_topic" default="/camera/image"/>
