@@ -14,9 +14,3 @@ Setup Guide:
 https://docs.google.com/document/d/1uFpv39_74nJOHbrFNFWmkD-pA4kRD-ykMMO4a9xq_7A/edit?usp=sharing
 
 Baseline solutions are provided. Every group will work on their own branch.
-
-Group Members:
-1. Zihan Liu
-2. Raman Jha
-3. Jason Luo
-4. Shreyansh Bhardwaj
